@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html manifest="iworld.manifest" lang="en-us">
+<head>
+    <title>UsingLoad.html</title>
+    <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#MyButton').click(function () {
+
+            //Load html from HelpDetails.html  .
+            $('#OutputDiv').load('HelpDetails.htm');
+        });
+
+    });
+</script>
+
+</head>
+<body>
+   <button id="MyButton"> Click to get HTML</button>
+
+     <div id = "OutputDiv"> </div>
+</body>
+</html>
